@@ -1,0 +1,37 @@
+{% extends "base.html"%}
+
+{% block content %}
+{% for message in messages %}
+{{ messages }}
+{% endfor %}
+
+
+
+<div class="container">
+    <div class="row mt-5 mb-5 shadow ">
+        <div class="col-lg-6 shadow p-4 ">
+            <h3>Connexion</h3>
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Adresse Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Mot de passe</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Cocher</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Connectez-vous</button>
+            </form>
+        </div>
+        <div class="col-lg-6">
+            <img src="https://img.freepik.com/photos-gratuite/ciel-du-coucher-du-soleil-alimente-energie-eolienne-solaire-generee-par-ia_188544-26193.jpg?size=626&ext=jpg&ga=GA1.2.1269487378.1684348333&semt=sph" width="550px" height="400px alt=">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
